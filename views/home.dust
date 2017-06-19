@@ -42,7 +42,6 @@
     <div class="container" id="cuerpo">
         <h1>WHAT DO YOU WANT TO LISTEN?</h1>
         <div class="row" style="margin:30px">
-
             <form class="form-inline" action="/home/search" method="post">
                 <div class="form-group col-lg-10">
                     <div class="input-group col-lg-6">
@@ -55,8 +54,33 @@
                 </div>
             </form>
         </div>
-    </div>
+        <div class="row">
+            <div class="well" id="table-search">
+                <h2>Users</h2>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Name</th>
+                            <th>Password</th>
+                        </tr>
+                    </thead>
+                    {#usuarios}
+                    <tbody>
+                        <tr>
+                            <td>{nombre_cancion}</td>
+                            <td>{duracion}</td>
+                            <td>{ruta}</td>
+                        </tr>
+                    </tbody>
+                    {/usuarios}
+                </table>
+            </div>
 
+        </div>
+    </div>
+    <script>
+    </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="/js/bootstrap.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
