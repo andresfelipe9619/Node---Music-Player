@@ -4,30 +4,32 @@
 <head>
     <title>Audio Player</title>
     <link rel="stylesheet" href="css/player-style.css">
-    <link rel="stylesheet" href="css/barra_style.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
 </head>
 
 <body>
-    <div id="barra-lateral">
-        <div id="logo-menu">
-        </div>
-
-        <div id="contenedor-home" class="contenedor-logos">
-            <div class="logo">
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">WebSiteName</a>
             </div>
-            <a href="/home/in">Home</a>
+            <ul class="nav navbar-nav">
+                <li><a href="/home/in">Home</a></li>
+                <li class="active"><a href="/player">Player</a></li>
+                <li><a href="#">Songs</a></li>
+                <li><a href="#">Artists</a></li>
+                <li><a href="#">Albums</a></li>
+                <li><a href="#">Playlists</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
         </div>
-        <div id="contenedor-canciones" class="contenedor-logos">
-            <div class="logo">
-            </div>
-            <a href="#">Songs</a>
-        </div>
-        <div id="contenedor-artistas" class="contenedor-logos">
-            <div class="logo">
-            </div>
-            <a href="">artist</a>
-        </div>
-    </div>
+    </nav>
     <div id="container">
         <div id="audio-img">
             <img class="cover">
