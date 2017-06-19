@@ -55,25 +55,25 @@
             </form>
         </div>
         <div class="row">
-            <div class="well" id="table-search">
-                <h2>Users</h2>
+            <div class="col-md-10" id="table-search">
+                <h2>Results</h2>
                 <table class="table">
                     <thead>
                         <tr>
-                            <th>Id</th>
                             <th>Name</th>
-                            <th>Password</th>
+                            <th>Artist</th>
+                            <th>Duration</th>
                         </tr>
                     </thead>
-                    {#usuarios}
+                    {#results}
                     <tbody>
                         <tr>
                             <td>{nombre_cancion}</td>
+                            <td>{nombre_artista}</td>
                             <td>{duracion}</td>
-                            <td>{ruta}</td>
                         </tr>
                     </tbody>
-                    {/usuarios}
+                    {/results}
                 </table>
             </div>
 
